@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: rgb(29, 28, 28);
+}
+
+.nav{
+    margin: 0 8rem;
+    padding-top: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .logo h2{
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: whitesmoke;
+}
+
+.nav .navigation ul{
+     display: flex;
+     flex-direction: row;
+}
+
+.nav .navigation ul li{
+    list-style: none;
+    padding: 0 1rem;
+}
+
+.nav .navigation ul li a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: whitesmoke;
+    transition: 0.3s ease;
+}
+
+.nav .navigation ul li a:hover{
+    color: #37F926;
+}
+
+.nav .navigation ul li a span{
+    font-size: 0.9rem;
+    border: 1px solid purple;
+    padding: 12px 20px;
+    background: purple;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+.home{
+    margin: 0 8rem;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home .text{
+    width: 35%;
+}
+
+.home .text h5{
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #37F926;
+}
+
+.home .text h1{
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: whitesmoke;
+    line-height: 65px;
+    padding-bottom: 10px;
+}
+
+.home .text p{
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    line-height: 30px;
+    padding-bottom: 12px;
+}
+
+.home .back{
+    width: 52%;
+}
+
+.home .back img{
+    width: 100%;
+}
+
+.home .back{
+    width: 52%;
+}
+
+.home .back img{
+    width: 100%;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down{
+    0%{
+        transform: translateY(10px);
+    }
+100%{
+        transform: translateY(-10px);
+    }
+    }
+
+.home .text button{
+    background:rgb(73, 73, 73);
+    border: 1px solid whitesmoke;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 20px 25px;
+    color: whitesmoke;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 15px 30px -12px rgb( 0 0 0 / 20%);
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s ease;
+}
+
+.home .text button:hover{
+    background:#37F926 ;
+}
+
